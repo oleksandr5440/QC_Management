@@ -1,0 +1,144 @@
+/* Global styles */
+body {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.sidebar {
+  min-height: calc(100vh - 56px);
+  background-color: #212529;
+}
+
+.main-content {
+  min-height: calc(100vh - 56px);
+}
+
+/* Card styling */
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Dashboard stats */
+.stat-card {
+  border-left: 4px solid;
+}
+
+.stat-card.products {
+  border-left-color: #0d6efd;
+}
+
+.stat-card.qc {
+  border-left-color: #198754;
+}
+
+.stat-card.inventory {
+  border-left-color: #dc3545;
+}
+
+.stat-card.shipping {
+  border-left-color: #6f42c1;
+}
+
+/* Form styling */
+.form-control:focus, .form-select:focus {
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Table styling */
+.table-hover tbody tr:hover {
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+/* Sidebar */
+.sidebar-link {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.sidebar-link:hover, .sidebar-link.active {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-link i {
+  width: 24px;
+  margin-right: 0.5rem;
+  text-align: center;
+}
+
+/* Login page */
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Detail views */
+.section-title {
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Status badges */
+.badge.pending {
+  background-color: #6c757d;
+}
+
+.badge.qc_passed {
+  background-color: #198754;
+}
+
+.badge.shipped {
+  background-color: #0d6efd;
+}
+
+.badge.complete {
+  background-color: #6f42c1;
+}
+
+/* Modal dialog */
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Image thumbnails */
+.thumbnail-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  border: 1px solid #dee2e6;
+}
+
+.thumbnail-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    min-height: auto;
+  }
+  
+  .main-content {
+    min-height: auto;
+  }
+}

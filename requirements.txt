@@ -9,7 +9,8 @@ psycopg2-binary==2.9.7
 Pillow==10.0.0
 python-dateutil==2.8.2
 PyJWT==2.8.0
-pandas==2.0.3
+pandas==1.5.3
+numpy==1.23.5
 openpyxl==3.1.2
 Werkzeug==2.3.7
 bcrypt==4.0.1
